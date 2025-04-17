@@ -5,7 +5,7 @@ zone          = "asia-northeast3-a"
 
 ### Boot_disk Configurations ###
 new_disk_name = "gce-terraform-disk-test"
-new_disk_size = 10	#number
+new_disk_size = 20	#number
 new_disk_type = "pd-standard"
 new_disk_zone = "asia-northeast3-a"
 

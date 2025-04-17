@@ -18,5 +18,3 @@ new_disk_labels = {
 # 둘중 Null이 아닌 값을 찾아 사용
 new_disk_image_id       = null
 new_disk_snapshot_id    = null
-#new_disk_image_id		   = "5684785941229355772"
-#new_disk_snapshot_id    = "8732534544530120257"

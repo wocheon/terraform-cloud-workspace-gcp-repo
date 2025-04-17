@@ -15,8 +15,8 @@ provider "google" {
 }
 
 module "gce_disk" {
-  source  = "app.terraform.io/gcp_terraform_wocheon07/module-repo/google//modules/gce_disk"
-  version = "1.1.2"
+  source  = "app.terraform.io/terraform_cloud_wocheon/module-repo/google//modules/gce_disk"
+  version = "1.0.0"
   new_disk_name         = var.new_disk_name
   new_disk_zone         = var.new_disk_zone
   new_disk_type         = var.new_disk_type

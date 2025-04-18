@@ -14,25 +14,25 @@ provider "google" {
   region  = var.region
 }
 
-module "gce_disk" {
-  source  = "app.terraform.io/terraform_cloud_wocheon/module-repo/google//modules/gce_disk"
-  version = "1.0.0"
-  new_disk_name         = var.new_disk_name
-  new_disk_zone         = var.new_disk_zone
-  new_disk_type         = var.new_disk_type
-  new_disk_size         = var.new_disk_size
-  new_disk_labels       = var.new_disk_labels
-### Source Configurations ###
-  new_disk_image_id              = var.new_disk_image_id
-  new_disk_snapshot_id           = var.new_disk_snapshot_id  
-}
-
-output "gce_disk_id" {
-  description = "Show GCE disk ID"
-  value       = module.gce_disk.disk_id
-}
-
-output "gce_disk_self_link" {
-  description = "Show GCE disk ID"
-  value       = module.gce_disk.self_link
-}
+#module "gce_disk" {
+#  source  = "app.terraform.io/terraform_cloud_wocheon/module-repo/google//modules/gce_disk"
+#  version = "1.0.0"
+#  new_disk_name         = var.new_disk_name
+#  new_disk_zone         = var.new_disk_zone
+#  new_disk_type         = var.new_disk_type
+#  new_disk_size         = var.new_disk_size
+#  new_disk_labels       = var.new_disk_labels
+#### Source Configurations ###
+#  new_disk_image_id              = var.new_disk_image_id
+#  new_disk_snapshot_id           = var.new_disk_snapshot_id  
+#}
+#
+#output "gce_disk_id" {
+#  description = "Show GCE disk ID"
+#  value       = module.gce_disk.disk_id
+#}
+#
+#output "gce_disk_self_link" {
+#  description = "Show GCE disk ID"
+#  value       = module.gce_disk.self_link
+#}
